@@ -7,6 +7,7 @@
     height: 200px;
     background-color: coral;
     animation: square-to-circle 2s 1s infinite alternate;
+
     /*
      - Animation name : square-to-circle ( just defined below )
      - Animation duration : 2s
@@ -15,11 +16,11 @@
      - Animation direction : Alternate ( plays from beginning to end, then from end to beginning again )
      */
 
-     position: fixed;
-     top: 45%;
-     left: 50%;
-     margin-top: -50px;
-     margin-left: -100px;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
 }
 
 @keyframes square-to-circle {

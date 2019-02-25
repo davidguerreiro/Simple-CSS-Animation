@@ -1,0 +1,55 @@
+.body {
+     background-color: #d2ecf5;
+}
+
+.element {
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    animation: square-to-circle 2s 1s infinite alternate;
+    /*
+     - Animation name : square-to-circle ( just defined below )
+     - Animation duration : 2s
+     - Animation delay : 1s
+     - Animation iteration count : infinite
+     - Animation direction : Alternate ( plays from beginning to end, then from end to beginning again )
+     */
+
+     position: fixed;
+     top: 45%;
+     left: 50%;
+     margin-top: -50px;
+     margin-left: -100px;
+}
+
+@keyframes square-to-circle {
+    0% {
+        border-radius: 0 0 0 0;
+        background-color: coral;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        border-radius: 50% 0 0 0;
+        background-color: darksalmon;
+        transform: rotate(45deg);
+    }
+
+    50% {
+        border-radius: 50% 50% 0 0;
+        background-color: indianred;
+        transform: rotate(90deg);
+    }
+
+    75% {
+        border-radius: 50% 50% 50% 0;
+        background-color: lightcoral;
+        transform: rotate(135deg);
+    }
+
+    100% {
+        border-radius: 50%;
+        background-color: darksalmon;
+        transform: rotate(180deg);
+    }
+}
